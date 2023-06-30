@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ExceptionComponent.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">com.jufarangoma.melitests.presentation.components</a> &gt; <span class="el_source">ExceptionComponent.kt</span></div><h1>ExceptionComponent.kt</h1><pre class="source lang-java linenums">package com.jufarangoma.melitests.presentation.components
+
+import android.content.Context
+import android.util.AttributeSet
+import android.view.LayoutInflater
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.isVisible
+import com.jufarangoma.melitests.databinding.LayoutExceptionBinding
+
+<span class="nc" id="L10">class ExceptionComponent @JvmOverloads constructor(</span>
+    context: Context,
+<span class="nc" id="L12">    attrs: AttributeSet? = null,</span>
+<span class="nc" id="L13">    defStyleSet: Int = 0</span>
+<span class="nc" id="L14">) : ConstraintLayout(context, attrs, defStyleSet) {</span>
+
+<span class="nc" id="L16">    private val binding = LayoutExceptionBinding.inflate(LayoutInflater.from(context), this, true)</span>
+
+<span class="nc" id="L18">    fun setView(title: String, description: String? = null) {</span>
+<span class="nc" id="L19">        binding.txvTitleException.text = title</span>
+<span class="nc" id="L20">        binding.txvSubtitleException.text = description</span>
+<span class="nc" id="L21">        isVisible = true</span>
+<span class="nc" id="L22">    }</span>
+<span class="nc" id="L23">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

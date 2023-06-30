@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SearchDTO.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">com.jufarangoma.melitests.data.models</a> &gt; <span class="el_source">SearchDTO.kt</span></div><h1>SearchDTO.kt</h1><pre class="source lang-java linenums">package com.jufarangoma.melitests.data.models
+
+import com.google.gson.annotations.SerializedName
+import com.jufarangoma.melitests.domain.entities.ProductEntity
+
+<span class="nc" id="L6">data class SearchDTO(</span>
+<span class="nc" id="L7">    @SerializedName(&quot;results&quot;)</span>
+<span class="nc" id="L8">    var results: List&lt;Product&gt;</span>
+)
+
+<span class="fc" id="L11">data class Product(</span>
+<span class="fc" id="L12">    @SerializedName(&quot;id&quot;)</span>
+<span class="pc" id="L13">    var id: String? = null,</span>
+<span class="fc" id="L14">    @SerializedName(&quot;title&quot;)</span>
+<span class="pc" id="L15">    var title: String? = null,</span>
+<span class="fc" id="L16">    @SerializedName(&quot;permalink&quot;)</span>
+<span class="pc" id="L17">    var permalink: String? = null,</span>
+<span class="fc" id="L18">    @SerializedName(&quot;site_id&quot;)</span>
+<span class="pc" id="L19">    var siteId: String? = null,</span>
+<span class="fc" id="L20">    @SerializedName(&quot;category_id&quot;)</span>
+<span class="pc" id="L21">    var categoryId: String? = null,</span>
+<span class="fc" id="L22">    @SerializedName(&quot;domain_id&quot;)</span>
+<span class="pc" id="L23">    var domainId: String? = null,</span>
+<span class="fc" id="L24">    @SerializedName(&quot;thumbnail&quot;)</span>
+<span class="pc" id="L25">    var thumbnail: String? = null,</span>
+<span class="fc" id="L26">    @SerializedName(&quot;price&quot;)</span>
+<span class="pc" id="L27">    var price: Double? = null,</span>
+<span class="fc" id="L28">    @SerializedName(&quot;original_price&quot;)</span>
+<span class="pc" id="L29">    var originalPrice: Double? = null,</span>
+<span class="fc" id="L30">    @SerializedName(&quot;official_store_name&quot;)</span>
+<span class="pc" id="L31">    var officialStoreName: String? = null</span>
+) {
+<span class="fc" id="L33">    fun mapToDomainEntity() = ProductEntity(</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        id = id ?: String(),</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        name = title ?: String(),</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        image = thumbnail ?: String(),</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        price = price ?: 0.0,</span>
+<span class="fc" id="L38">        originalPrice = originalPrice,</span>
+<span class="fc" id="L39">        seller = officialStoreName</span>
+<span class="fc" id="L40">    )</span>
+<span class="fc" id="L41">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
