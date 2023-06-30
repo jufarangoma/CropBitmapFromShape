@@ -1,0 +1,46 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+app,com.jufarangoma.melitests.presentation.viewmodels,ProductDetailViewModel,3,59,0,0,0,10,1,5,1,5
+app,com.jufarangoma.melitests.presentation.viewmodels,SearchViewModel.search.new Function2() {...},0,29,0,0,0,3,0,1,0,1
+app,com.jufarangoma.melitests.presentation.viewmodels,SearchViewModel,6,78,0,0,0,16,2,4,2,4
+app,com.jufarangoma.melitests.presentation.viewmodels,ProductDetailViewModel.getProductDetail.1.1.new FlowCollector() {...},0,47,0,2,0,8,0,2,0,1
+app,com.jufarangoma.melitests.presentation.viewmodels,ProductDetailViewModel.getProductDetail.1.1.new Function2() {...},5,14,1,1,0,3,1,1,0,1
+app,com.jufarangoma.melitests.presentation.viewmodels,SearchViewModel.search.1.new FlowCollector() {...},0,43,0,2,0,6,0,2,0,1
+app,com.jufarangoma.melitests.presentation.viewmodels,SearchViewModel.search.1.new Function2() {...},5,14,1,1,0,3,1,1,0,1
+app,com.jufarangoma.melitests.presentation.viewmodels,ProductDetailViewModel.getProductDetail.new Function2() {...},0,58,0,4,0,7,0,3,0,1
+app,com.jufarangoma.melitests.utils,ExceptionsKt,4,38,1,7,0,9,1,4,0,1
+app,com.jufarangoma.melitests.utils,CommonExtensionsKt,51,8,0,2,12,3,2,2,2,1
+app,com.jufarangoma.melitests.data.repositories,ExampleDomainExceptionStrategy,0,55,0,6,0,12,0,6,0,2
+app,com.jufarangoma.melitests.data.repositories,ProductDetailRepositoryImpl,0,34,0,0,0,6,0,2,0,2
+app,com.jufarangoma.melitests.data.repositories,SearchRepositoryImpl.search.new Function3() {...},0,47,0,0,0,4,0,1,0,1
+app,com.jufarangoma.melitests.data.repositories,SearchRepositoryImpl.search.new Function2() {...},0,49,0,0,0,5,0,1,0,1
+app,com.jufarangoma.melitests.data.repositories,ProductDetailRepositoryImpl.getProductDetail.new Function2() {...},0,39,0,0,0,4,0,1,0,1
+app,com.jufarangoma.melitests.data.repositories,ProductDetailRepositoryImpl.getProductDetail.new Function3() {...},0,37,0,0,0,4,0,1,0,1
+app,com.jufarangoma.melitests.data.repositories,SearchRepositoryImpl,0,35,0,0,0,6,0,2,0,2
+app,com.jufarangoma.melitests.application,App,3,0,0,0,1,0,1,0,1,0
+app,com.jufarangoma.melitests.presentation,RequestState.Error,0,13,0,0,0,1,0,2,0,2
+app,com.jufarangoma.melitests.presentation,RequestState.Success,0,4,0,0,0,1,0,1,0,1
+app,com.jufarangoma.melitests.presentation,RequestState.Empty,0,4,0,0,0,1,0,1,0,1
+app,com.jufarangoma.melitests.presentation,RequestState.Loading,0,4,0,0,0,1,0,1,0,1
+app,com.jufarangoma.melitests.domain.entities,ProductEntity,0,93,0,2,0,12,0,11,0,10
+app,com.jufarangoma.melitests.domain.entities,ProductDetail,51,51,0,0,1,8,1,8,1,8
+app,com.jufarangoma.melitests.domain.entities,Attribute,21,9,0,0,1,3,3,1,3,1
+app,com.jufarangoma.melitests.di,NetworkModule_HttpInterceptorFactory.InstanceHolder,5,0,0,0,1,0,1,0,1,0
+app,com.jufarangoma.melitests.di,ProductDetailModule,42,0,0,0,12,0,4,0,4,0
+app,com.jufarangoma.melitests.di,NetworkModule_DomainExceptionRepositoryFactory.InstanceHolder,5,0,0,0,1,0,1,0,1,0
+app,com.jufarangoma.melitests.di,SearchModule,45,0,0,0,13,0,4,0,4,0
+app,com.jufarangoma.melitests.di,NetworkModule,77,0,2,0,21,0,6,0,5,0
+app,com.jufarangoma.melitests.di,NetworkModule_CoroutineDispatcherProviderFactory.InstanceHolder,5,0,0,0,1,0,1,0,1,0
+app,com.jufarangoma.melitests.presentation.components,ExceptionComponent,69,0,0,0,11,0,4,0,4,0
+app,com.jufarangoma.melitests.domain.exceptions,Unauthorized,0,6,0,0,0,1,0,1,0,1
+app,com.jufarangoma.melitests.domain.exceptions,HttpErrorCode,6,15,0,0,0,4,2,1,2,1
+app,com.jufarangoma.melitests.domain.exceptions,DomainException,0,22,0,0,0,3,0,3,0,3
+app,com.jufarangoma.melitests.domain.exceptions,ParseException,0,6,0,0,0,1,0,1,0,1
+app,com.jufarangoma.melitests.domain.exceptions,TimeOutException,0,6,0,0,0,1,0,1,0,1
+app,com.jufarangoma.melitests.domain.exceptions,UnknownException,0,6,0,0,0,1,0,1,0,1
+app,com.jufarangoma.melitests.domain.exceptions,InternalServerError,0,6,0,0,0,1,0,1,0,1
+app,com.jufarangoma.melitests.data.models,Pictures,9,9,0,0,1,3,1,2,1,2
+app,com.jufarangoma.melitests.data.models,SearchDTO,19,0,0,0,3,0,3,0,3,0
+app,com.jufarangoma.melitests.data.models,Shipping,0,18,0,0,0,4,0,3,0,3
+app,com.jufarangoma.melitests.data.models,Attributes,6,32,0,0,0,10,2,3,2,3
+app,com.jufarangoma.melitests.data.models,ProductDetailDTO,21,149,1,3,0,25,8,4,7,3
+app,com.jufarangoma.melitests.data.models,Product,70,151,0,8,0,30,20,7,20,3
